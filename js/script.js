@@ -61,7 +61,7 @@ console.log(bombs);
 /* Chiedi all'utente 100 - 16 volte di inserire un numero, niente doppioni */
 while (userChoice.length < maxAttempts && gameOver == false) {
     var numeroUtente = parseInt(prompt("Inserisci un numero tra 1 e 100!"));
-    if (!isInArray(numeroUtente, userChoice)) {
+    if (!isInArray(numeroUtente, userChoice) && numeroUtente > 0 && numeroUtente < 101 && !isNaN(numeroUtente)) {
         if (isInArray(numeroUtente, bombs)) {
             gameOver = true;
             alert("GAME OVER\nHai colpito la bomba!\nHai totalizzato: " + userChoice.length + " punti.");
