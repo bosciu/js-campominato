@@ -39,8 +39,9 @@ function isInArray(element, array) {
         }
     }
 }
-
 /* /FUNCTIONS */
+
+
 var maxAttempts = 84;
 /* Linea debug */
 maxAttempts = 5;
